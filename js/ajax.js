@@ -28,9 +28,10 @@ $(document).ready(function () {
       function (response) {
         console.log('Запрос отправлен успешно');
         console.log('Ответ сервера: ', response);
+				alert ("Ваша заявка принята");
       }
     );
-      
+     
 //      закрытие попапа
       function closePopup() {
         $('.popup').fadeOut(100);
