@@ -439,7 +439,7 @@ html, body {
 .about__btn {
 	padding: 24px 72px 22px;
 	display: block;
-	margin: auto;
+	margin-left: 0;
 }
 
 .btn:hover, .btn:focus {
