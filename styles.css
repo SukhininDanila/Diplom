@@ -347,6 +347,20 @@ html, body {
 	z-index: 150;
 }
 
+.notification {
+	width: 250px;
+	height: 20px;
+	background-color: yellow;
+	border: 1px solid red;
+	color: blue;
+	position: fixed;
+	top: 253px;
+	left: 50%;
+	z-index: 210;
+	text-align: center;
+	margin-left: -140px;
+}
+
 /*section.name*/
 .name {
 	position: relative;
@@ -1297,6 +1311,10 @@ html, body {
 	
 	.popup-callback__input-name, .popup-callback__input-tel {
 		width: 237px;
+	}
+	
+	.notification {
+		top: 333px;
 	}
 }
 

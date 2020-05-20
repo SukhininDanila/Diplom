@@ -28,14 +28,14 @@ $(document).ready(function () {
       function (response) {
         console.log('Запрос отправлен успешно');
         console.log('Ответ сервера: ', response);
-				alert ("Ваша заявка принята");
       }
     );
-     
+     $('body').append('<div class="notification">Ваша заявка принята</div>');
 //      закрытие попапа
       function closePopup() {
         $('.popup').fadeOut(100);
         $('#overlay').remove();
+				$('.notification').remove();
       }
 //      закрытие попапа через 1,5 сек
       setTimeout (closePopup, 1500);
