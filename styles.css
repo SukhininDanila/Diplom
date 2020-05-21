@@ -75,6 +75,9 @@ html, body {
 
 #menu__toggle {
   opacity: 0;
+	position: fixed;
+  top: 40px;
+  left: 40px;
 }
 
 .hamburger-menu__btn {
