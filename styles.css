@@ -199,6 +199,15 @@ html, body {
 	margin-right: 35px;
 }
 
+.nav__link:hover {
+	color: #fc557c;
+}
+
+.nav__link:active {
+	color: #fc557c;
+	border-bottom: 1px solid #fc557c;
+}
+
 .nav__link_header {
 	color: #000;
 	margin-right: 35px;
@@ -757,19 +766,35 @@ html, body {
 }
 
 .social__link_vk {
-	background: url('img/socialsprite.png') no-repeat;	
+	background: url('img/social_sprite.png') no-repeat -19px -20px;	
+}
+
+.social__link_vk:hover {
+	background: url('img/social_sprite.png') no-repeat -19px -74px;	
 }
 
 .social__link_fb {
-	background: url('img/socialsprite.png') no-repeat -58px;	
+	background: url('img/social_sprite.png') no-repeat -65px -20px;	
+}
+
+.social__link_fb:hover {
+	background: url('img/social_sprite.png') no-repeat -65px -74px;	
 }
 
 .social__link_twitter {
-	background: url('img/socialsprite.png') no-repeat -111px;	
+	background: url('img/social_sprite.png') no-repeat -110px -17px;	
+}
+
+.social__link_twitter:hover {
+	background: url('img/social_sprite.png') no-repeat -110px -71px;	
 }
 
 .social__link_instagram {
-	background: url('img/socialsprite.png') no-repeat -169px;	
+	background: url('img/social_sprite.png') no-repeat -152px -18px;	
+}
+
+.social__link_instagram:hover {
+	background: url('img/social_sprite.png') no-repeat -152px -67px;	
 }
 
 .copyright {
