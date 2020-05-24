@@ -13,11 +13,10 @@
 </head>
 <body>
 	<header class="header">
-<!--	Верхняя строка-->
 		<div class="container header__container">
 			
 			<div class="hamburger-menu">
-				<input id="menu__toggle" type="checkbox" />
+				<input id="menu__toggle" type="checkbox">
 				<label class="hamburger-menu__btn" for="menu__toggle">
 					<span class="hamburger-menu__line"></span>
 				</label>
@@ -32,42 +31,41 @@
 			<nav class="nav header__nav">
 				<ul class="nav__list">
 					<li class="nav__item nav__item_header">
-						<a href="#skills" class="nav__link nav__link_header">Услуги</a>
+						<a class="nav__link nav__link_header" href="#skills">Услуги</a>
 					</li>
 
 					<li class="nav__item nav__item_header">
-						<a href="#example" class="nav__link nav__link_header">Портфолио</a>
+						<a class="nav__link nav__link_header" href="#example">Портфолио</a>
 					</li>
 
 					<li class="nav__item nav__item_header">
-						<a href="#price" class="nav__link nav__link_header">Стоимость</a>
+						<a class="nav__link nav__link_header" href="#price">Стоимость</a>
 					</li>
 				</ul>
 			</nav>
 
-			<a href="tel:+74999955577" class="number number_header">+7 (499) 995-55-77</a>
+			<a class="number number_header" href="tel:+74999955577">+7 (499) 995-55-77</a>
 			<button class="btn-call header__btn-call show_popup">Заказать звонок</button>
 			<button class="btn-call_mobile show_popup"></button>
 			
 <!--			Pop-up-->
-			<form class="popup popup-callback" action="https://echo.htmlacademy.ru/">
+			<div class="popup popup-callback">
 				<a class="popup__close" href="#">Close</a>
 				<h2 class="popup__subtitle">Заказать звонок</h2>
 				<form method="post" action="https://echo.htmlacademy.ru/">
-					<label for="username" class="popup-callback__label">*Имя:</label>
-					<input type="text" id="username" name="username" class="popup-callback__input-name" placeholder="Имя">
+					<label class="popup-callback__label" for="username">*Имя:</label>
+					<input class="popup-callback__input-name" type="text" id="username" name="username" placeholder="Имя">
 					
-					<label for="phone" class="popup-callback__label">*Телефон:</label>
-					<input type="tel" id="phone" name="phone" class="popup-callback__input-tel" placeholder="+7 (999) 999-99-99">
+					<label class="popup-callback__label" for="phone">*Телефон:</label>
+					<input class="popup-callback__input-tel" type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
 					
-					<input type="submit" value="Отправить" class="popup-callback__submit">	
+					<input class="popup-callback__submit" type="submit" value="Отправить">	
 				</form>
-			</form>	
+			</div>	
 		</div>	
 		
 <!--		Имя с фигурами-->
-		<section class="name">
-				
+		<section class="name">				
 			<div class="flying-element name__flying-element flying-element_braces">
 				<svg width="60" height="55">
 					<defs>
@@ -123,10 +121,10 @@
 				</div>
 				<div class="photo">
 					<picture>
-						<source srcset="img/photo320.png" media="(max-width: 510px)" class="photo__img">
-						<source srcset="img/photo1024.png" media="(max-width: 1250px)" class="photo__img">
-						<source srcset="img/photo.png" class="photo__img">
-						<img src="img/photo.png" alt="Мое фото" class="photo__img">
+						<source class="photo__img" srcset="img/photo320.png" media="(max-width: 510px)">
+						<source class="photo__img" srcset="img/photo1024.png" media="(max-width: 1250px)">
+						<source class="photo__img" srcset="img/photo.png">
+						<img class="photo__img" src="img/photo.png" alt="Мое фото">
 					</picture>
 				</div>
 			</div>
@@ -135,10 +133,8 @@
 	
 	
 	<main class="main">
-		<section class="skills container" id="skills">
-		
-		<h3 class="h3">Что я делаю</h3>
-				
+		<section class="skills container" id="skills">		
+		<h3 class="h3">Что я делаю</h3>				
 			<div class="cards">
 				<div class="card card_skill-one">
 					Вёрстка лендинг–страниц и сайтов любой сложности
@@ -161,106 +157,60 @@
 		</section>
 		
 		
-		<section class="example" id="example">
-			
+		<section class="example" id="example">			
 			<div class="container example__container">
 				<h3 class="h3">Примеры моих работ</h3>
 
 				<div class="slider">
 					<ul class="slider__list">
 						<li class="slider__item">
-
 							<picture>
-								<source 
-									srcset="img/example-1-tablet.png" 
-									media="(max-width: 1250px)" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-1-tablet.png" media="(max-width: 1250px)">
 								
-								<source 
-									srcset="img/example-1-mobile.png" 
-									media="(max-width: 700px)" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-1-mobile.png"  media="(max-width: 700px)">
 								
-								<source
-									srcset="img/example-1.png" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-1.png">
 								
-								<img 
-									src="img/example-1.png" 
-									alt="Skillbox" 
-									class="slider__img">
-								
-							</picture>							
+								<img class="slider__img" src="img/example-1.png" alt="Skillbox">								
+							</picture>	
+													
 							<p class="text">Сайт психолога Веры Антоновой</p>
 						</li>
 
 						<li class="slider__item">
-
 							<picture>
-								<source
-									srcset="img/example-2-tablet.png" 
-									media="(max-width: 1250px)" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-2-tablet.png" media="(max-width: 1250px)">
 								
-								<source
-									srcset="img/example-2-mobile.png"
-									media="(max-width: 700px)" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-2-mobile.png" media="(max-width: 700px)">
 								
-								<source \
-									srcset="img/example-2.png" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-2.png">
 								
-								<img 
-									src="img/example-1.png" 
-									alt="Skillbox" 
-									class="slider__img">
-								
+								<img class="slider__img" src="img/example-1.png" alt="Skillbox">								
 							</picture>
+							
 							<p class="text">Сайт магазина детской одежды</p>
 						</li>
 
 						<li class="slider__item">
-
 							<picture>
-								<source
-									srcset="img/example-3-tablet.png"
-									media="(max-width: 1250px)" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-3-tablet.png" media="(max-width: 1250px)">
 								
-								<source 
-									srcset="img/example-3-mobile.png" 
-									media="(max-width: 700px)" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-3-mobile.png" media="(max-width: 700px)">
 								
-								<source
-									srcset="img/example-3.png" 
-									class="slider__img">
+								<source class="slider__img" srcset="img/example-3.png">
 								
-								<img 
-									src="img/example-1.png" 
-									alt="Skillbox" 
-									class="slider__img">
-								
+								<img class="slider__img" src="img/example-1.png" alt="Skillbox">								
 							</picture>
+							
 							<p class="text">Сайт магазина &laquo;Рыболов&raquo;</p>
 						</li>
 					</ul>
 
-					<button
-						class="slider__button slider__button_prev"
-						aria-label="Предыдущий слайд"
-					>&lt;</button>
+					<button class="slider__button slider__button_prev" aria-label="Предыдущий слайд">&lt;</button>
 
-					<button
-						class="slider__button slider__button_next"
-						aria-label="Следующий слайд"
-					>&gt;</button>
+					<button class="slider__button slider__button_next" aria-label="Следующий слайд">&gt;</button>
 
-					<div
-						class="slider__pagination paginator"
-						aria-hidden="true"
-					></div>
+					<div class="slider__pagination paginator" aria-hidden="true"></div>
 				</div>
 
 				<button class="btn example__btn show_popup">Заказать проект</button>
@@ -268,8 +218,7 @@
 		</section>
 		
 		
-		<section class="price" id="price">
-		
+		<section class="price" id="price">		
 			<div class="flying-element price__flying-element flying-element_braces">
 				<svg width="60" height="55">
 						<text x="0" y="30" transform="rotate(30, 0, 25)" fill=#fff font-size="inherit" font-weight="bold">{ }</text>					
@@ -315,48 +264,46 @@
 
 
 	<footer>
-		<div class="container footer__container">
-		
+		<div class="container footer__container">		
 			<nav class="nav footer__nav">
 				<ul class="nav__list">
 					<li class="nav__item nav__item_footer">
-						<a href="#skills" class="nav__link nav__link_footer">Услуги</a>
+						<a class="nav__link nav__link_footer" href="#skills">Услуги</a>
 					</li>
 					
 					<li class="nav__item nav__item_footer">
-						<a href="#example" class="nav__link nav__link_footer">Портфолио</a>
+						<a class="nav__link nav__link_footer" href="#example">Портфолио</a>
 					</li>
 					
 					<li class="nav__item nav__item_footer">
-						<a href="#price" class="nav__link nav__link_footer">Стоимость</a>
+						<a class="nav__link nav__link_footer" href="#price">Стоимость</a>
 					</li>
 				</ul>
 			</nav>
 				
 			<address class="contacts">
-				<a href="tel:+74999955577" class="contact contacts__number">+7 (499) 995-55-77</a>
-				<a href="mailto:dmitry@alekseev.com" class="contact contacts__mail">dmitry@alekseev.com</a>
+				<a class="contact contacts__number" href="tel:+74999955577">+7 (499) 995-55-77</a>
+				<a  class="contact contacts__mail" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
 			</address>
 			
-			<address class="footer-social">
-			
+			<address class="footer-social">			
 				<button class="btn-call footer__btn-call show_popup">Заказать звонок</button>
 				
 				<ul class="social">
 					<li class="social__item">
-						<a href="https://vk.com/" class="social__link social__link_vk"></a>
+						<a class="social__link social__link_vk" href="https://vk.com/"></a>
 					</li>
 					
 					<li class="social__item">
-						<a href="https://fb.com" class="social__link social__link_fb"></a>
+						<a class="social__link social__link_fb" href="https://fb.com"></a>
 					</li>
 					
 					<li class="social__item">
-						<a href="https://twitter.com" class="social__link social__link_twitter"></a>
+						<a class="social__link social__link_twitter" href="https://twitter.com"></a>
 					</li>
 					
 					<li class="social__item">
-						<a href="https://instagram.com" class="social__link social__link_instagram"></a>
+						<a class="social__link social__link_instagram" href="https://instagram.com"></a>
 					</li>
 				</ul>
 			</address>			

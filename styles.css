@@ -337,7 +337,7 @@ html, body {
 	text-transform: uppercase;
 	position: relative;
 	cursor: pointer;
-	behavior: url(PIE.htc);
+/*	behavior: url(PIE.htc);*/
 }
 
 .popup-callback__submit:hover {
@@ -986,6 +986,7 @@ html, body {
 
 
 
+
 @media (max-width: 955px) {	
 	.slash-name {
 		display: none;
@@ -1019,8 +1020,7 @@ html, body {
 
 
 
-@media (max-width: 767px) {
-	
+@media (max-width: 767px) {	
 	.name__flying-element.flying-element_braces {
 		left: 100px;
 	}
@@ -1159,9 +1159,6 @@ html, body {
 
 
 
-
-
-
 @media (max-width: 700px){
 	.example__container {
 		padding: 55px 20px 51px;
@@ -1197,7 +1194,6 @@ html, body {
 		display: none;
 	}
 }
-
 
 
 
@@ -1364,16 +1360,17 @@ html, body {
 }
 
 
+
 @media (max-width: 368px) {
 	.figure320 {
 		bottom: 209px;
 	}
-
-
-
-
-@media (max-width: 335px) {
+}
 	
+	
+	
+	
+@media (max-width: 335px) {	
 	.footer__btn-call {
 		color: #fff;
 		background-color: #ff4e2e;

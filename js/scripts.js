@@ -22,7 +22,7 @@ new Swiper('.slider', {
     clickable: true
   },
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--prev',
+    nextEl: '.slider__button_next',
+    prevEl: '.slider__button_prev',
   },
 });
