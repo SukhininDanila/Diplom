@@ -16,8 +16,8 @@ $(document).ready(function () {
 			
     } else if ($form.find('input[name=phone]').val() === '') {
         // добавляем текст ошибки
-      $form.find('input[name=phone]').attr('placeholder', 'ВВЕДИТЕ НОМЕР ТЕЛЕФОНА');			
-        // прерываем дальнейшую обработку
+      $form.find('input[name=phone]').attr('placeholder', 'ВВЕДИТЕ НОМЕР ТЕЛЕФОНА');
+			// прерываем дальнейшую обработку
       return false;
     }
 
@@ -30,17 +30,16 @@ $(document).ready(function () {
         console.log('Ответ сервера: ', response);
       }
     );
-     $('body').append('<div class="notification">Ваша заявка принята</div>');
+    $('body').append('<div class="notification">Ваша заявка принята</div>');
 //      закрытие попапа
-      function closePopup() {
-        $('.popup').fadeOut(100);
-        $('#overlay').remove();
-				$('.notification').remove();
-      }
+		function closePopup() {
+			$('.popup').fadeOut(100);
+			$('#overlay').remove();
+			$('.notification').remove();
+		}
 //      закрытие попапа через 1,5 сек
-      setTimeout (closePopup, 1500);
+    setTimeout(closePopup, 1500);
     // отключаем действие по умолчанию
     return false;
   });
 });
-

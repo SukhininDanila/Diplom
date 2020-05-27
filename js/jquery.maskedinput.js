@@ -1,14 +1,14 @@
 function getPasteEvent() {
-    var el = document.createElement('input'),
-        name = 'onpaste';
-    el.setAttribute(name, '');
-    return (typeof el[name] === 'function')?'paste':'input';             
+	var el = document.createElement('input'),
+		name = 'onpaste';
+	el.setAttribute(name, '');
+	return (typeof el[name] === 'function') ? 'paste' : 'input';
 }
 
 var pasteEventName = getPasteEvent() + ".mask",
 	ua = navigator.userAgent,
 	iPhone = /iphone/i.test(ua),
-	android=/android/i.test(ua),
+	android = /android/i.test(ua),
 	caretTimeoutId;
 
 $.mask = {
@@ -19,12 +19,12 @@ $.mask = {
 		'*': "[A-Za-z0-9]"
 	},
 	dataName: "rawMaskFn",
-	placeholder: '_',
+	placeholder: '_'
 };
 
 $.fn.extend({
 	//Helper Function for Caret positioning
-	caret: function(begin, end) {
+	caret: function (begin, end) {
 		var range;
 
 		if (this.length === 0 || this.is(":hidden")) {

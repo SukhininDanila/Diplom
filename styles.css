@@ -71,6 +71,7 @@ html, body {
 /*гамбургер-меню*/
 .hamburger-menu {
 	margin-right: auto;
+	display: none;
 }
 
 #menu__toggle {
@@ -556,6 +557,7 @@ html, body {
   position: relative;
   overflow-x: hidden;
 	margin: 103px 0 96px;
+	padding: 40px 26px;
 }
 
 .slider__overflow {
@@ -627,6 +629,7 @@ html, body {
 
 .slider__pagination {
   margin-top: 100px;
+	display: none;
 }
 
 .text {
@@ -838,6 +841,18 @@ html, body {
 	.header__nav {
 		display: none;
 	}
+	
+	.hamburger-menu {
+		display: block;
+	}
+	
+	.slider__pagination {
+		display: flex;
+	}
+	
+	.slider__button {
+    display: none;
+  }
 		
 	.header__btn-call {
 		margin-right: 40px;
@@ -953,19 +968,6 @@ html, body {
 
 
 
-@media (min-width: 1250px) {
-	.slider__pagination, .hamburger-menu {
-	display: none;
-  }
-	
-	.slider {
-    padding: 40px 26px;
-  }
-}
-
-
-
-
 @media (max-width: 1249.9px) {
   .slider__button {
     display: none;
@@ -988,10 +990,6 @@ html, body {
 
 
 @media (max-width: 955px) {	
-	.slash-name {
-		display: none;
-	}
-	
 	.skills {
 		padding: 50px 108px;
 	}
@@ -1357,20 +1355,11 @@ html, body {
 	.number_header {
 		font-size: 18px;
 	}
-}
-
-
-
-@media (max-width: 368px) {
+	
 	.figure320 {
 		bottom: 209px;
 	}
-}
 	
-	
-	
-	
-@media (max-width: 335px) {	
 	.footer__btn-call {
 		color: #fff;
 		background-color: #ff4e2e;
