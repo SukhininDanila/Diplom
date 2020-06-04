@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
 	<title>Создание сайтов</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles_min.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Заглавная страница сайта-визитки разработчика Дмитрия Алексеева" />
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/scripts.js" defer></script>
   <script src="js/jquery-3.5.0.min.js"></script>
@@ -122,9 +123,12 @@
 				</div>
 				<div class="photo">
 					<picture>
-						<source class="photo__img" srcset="img/photo320.png" media="(max-width: 510px)">
-						<source class="photo__img" srcset="img/photo1024.png" media="(max-width: 1250px)">
-						<source class="photo__img" srcset="img/photo.png">
+						<source class="photo__img" srcset="img/photo320.webp" media="(max-width: 510px)" type="image/webp">
+						<source class="photo__img" srcset="img/photo320.png" media="(max-width: 510px)" type="image/png">
+						<source class="photo__img" srcset="img/photo1024.webp" media="(max-width: 1250px)" type="image/webp">
+						<source class="photo__img" srcset="img/photo1024.png" media="(max-width: 1250px)" type="image/png">
+						<source class="photo__img" srcset="img/photo.webp" type="image/webp">
+						<source class="photo__img" srcset="img/photo.png" type="image/png">
 						<img class="photo__img" src="img/photo.png" alt="Мое фото">
 					</picture>
 				</div>
@@ -166,12 +170,18 @@
 					<ul class="slider__list">
 						<li class="slider__item">
 							<picture>
-								<source class="slider__img" srcset="img/example-1-tablet.png" media="(max-width: 1250px)">
+								<source class="slider__img" srcset="img/example-1-tablet.webp" media="(max-width: 1250px)" type="image/webp">
 								
-								<source class="slider__img" srcset="img/example-1-mobile.png"  media="(max-width: 700px)">
+								<source class="slider__img" srcset="img/example-1-tablet.png" media="(max-width: 1250px)" type="image/png">
+																
+								<source class="slider__img" srcset="img/example-1-mobile.webp"  media="(max-width: 700px)" type="image/webp">
 								
-								<source class="slider__img" srcset="img/example-1.png">
-								
+								<source class="slider__img" srcset="img/example-1-mobile.png"  media="(max-width: 700px)" type="image/png">
+														
+								<source class="slider__img" srcset="img/example-1.webp" type="image/webp">
+
+								<source class="slider__img" srcset="img/example-1.png" type="image/png">
+															
 								<img class="slider__img" src="img/example-1.png" alt="Skillbox">								
 							</picture>	
 													
@@ -180,11 +190,17 @@
 
 						<li class="slider__item">
 							<picture>
-								<source class="slider__img" srcset="img/example-2-tablet.png" media="(max-width: 1250px)">
+								<source class="slider__img" srcset="img/example-2-tablet.webp" media="(max-width: 1250px)" type="image/webp">
 								
-								<source class="slider__img" srcset="img/example-2-mobile.png" media="(max-width: 700px)">
+								<source class="slider__img" srcset="img/example-2-tablet.png" media="(max-width: 1250px)" type="image/png">								
 								
-								<source class="slider__img" srcset="img/example-2.png">
+								<source class="slider__img" srcset="img/example-2-mobile.webp" media="(max-width: 700px)" type="image/webp">
+								
+								<source class="slider__img" srcset="img/example-2-mobile.png" media="(max-width: 700px)" type="image/png">
+								
+								<source class="slider__img" srcset="img/example-2.webp" type="image/webp">
+								
+								<source class="slider__img" srcset="img/example-2.png" type="image/png">
 								
 								<img class="slider__img" src="img/example-1.png" alt="Skillbox">								
 							</picture>
@@ -194,12 +210,18 @@
 
 						<li class="slider__item">
 							<picture>
-								<source class="slider__img" srcset="img/example-3-tablet.png" media="(max-width: 1250px)">
+								<source class="slider__img" srcset="img/example-3-tablet.webp" media="(max-width: 1250px)" type="image/webp">
+							
+								<source class="slider__img" srcset="img/example-3-tablet.png" media="(max-width: 1250px)" type="image/png">
 								
-								<source class="slider__img" srcset="img/example-3-mobile.png" media="(max-width: 700px)">
+								<source class="slider__img" srcset="img/example-3-mobile.webp" media="(max-width: 700px)" type="image/webp">
 								
-								<source class="slider__img" srcset="img/example-3.png">
+								<source class="slider__img" srcset="img/example-3-mobile.png" media="(max-width: 700px)" type="image/png">
 								
+								<source class="slider__img" srcset="img/example-3.webp" type="image/webp">
+								
+								<source class="slider__img" srcset="img/example-3.png" type="image/png">
+																
 								<img class="slider__img" src="img/example-1.png" alt="Skillbox">								
 							</picture>
 							
