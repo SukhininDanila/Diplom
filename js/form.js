@@ -30,15 +30,17 @@ $(document).ready(function () {
         console.log('Ответ сервера: ', response);
       }
     );
-    $('body').append('<div class="notification">Ваша заявка принята</div>');
+//    $('body').append('<div class="notification">Ваша заявка принята</div>');
 //      закрытие попапа
-		function closePopup() {
-			$('.popup').fadeOut(100);
+		function closeNotification() {
 			$('#overlay').remove();
 			$('.notification').remove();
 		}
+				
 //      закрытие попапа через 1,5 сек
-    setTimeout(closePopup, 1500);
+    setTimeout($('.popup').fadeOut(100), 500);
+		$('body').append('<div class="notification">Ваша заявка принята</div>');
+		setTimeout(closeNotification, 1500);
     // отключаем действие по умолчанию
     return false;
   });

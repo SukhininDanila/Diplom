@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<title>Создание сайтов</title>
-	<link rel="stylesheet" type="text/css" href="styles_min.css">
+<!--	<link rel="stylesheet" type="text/css" href="styles_min.css">-->
+<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Заглавная страница сайта-визитки разработчика Дмитрия Алексеева" />
@@ -10,7 +11,7 @@
   <script src="js/scripts.js" defer></script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/popup.js"></script>
-  <script src="js/ajax.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/closeHamburger.js"></script>
 </head>
 <body>
@@ -55,13 +56,13 @@
 				<a class="popup__close" href="#">Close</a>
 				<h2 class="popup__subtitle">Заказать звонок</h2>
 				<form method="post" action="https://echo.htmlacademy.ru/">
-					<label class="popup-callback__label" for="username">*Имя:</label>
+					<label class="popup-callback__label" for="username">* Ваше имя:</label>
 					<input class="popup-callback__input-name" type="text" id="username" name="username" placeholder="Имя">
 					
 					<label class="popup-callback__label" for="phone">*Телефон:</label>
 					<input class="popup-callback__input-tel" type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
 					
-					<input class="popup-callback__submit" type="submit" value="Отправить">	
+					<input class="btn popup__btn" type="submit" value="Заказать звонок">	
 				</form>
 			</div>	
 		</div>	

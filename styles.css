@@ -132,10 +132,10 @@ html, body {
 	width: 300px;
   height: 100%;
 	margin: 0;
-  padding: 80px 0;
+  padding: 220px 0;
 	list-style: none;
   text-align: center;
-	background: linear-gradient(to top right, #ff7b66, #ff2f96);
+	background: linear-gradient(to top, #ff7b66, #ff2f96);
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 	z-index: 3;
 }
@@ -143,7 +143,7 @@ html, body {
 .menu__item {
   display: block;
   padding: 12px 24px;
-	color: #333;
+	color: #fff;
 	font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -165,13 +165,13 @@ html, body {
 #menu__toggle:checked ~ .hamburger-menu__btn > span::before {
   top: 0;
   transform: rotate(0);
-	background: #000;
+	background: #fff;
 }
 
 #menu__toggle:checked ~ .hamburger-menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
-	background: #000;
+	background: #fff;
 }
 
 #menu__toggle:checked ~ .menu {
@@ -221,6 +221,14 @@ html, body {
 	font-size: 25px;
 }
 
+.number:hover {
+	color: #6c6969;
+}
+
+.number:active {
+	color: #f53f4f;
+}
+
 .number_header {
 	font-weight: bold;
 	margin-right: 29px;
@@ -265,14 +273,14 @@ html, body {
 
 /*All styles popup*/
 .popup {
-	padding: 5px 15px 15px;
+	padding: 15px 30px 25px;
 	position: fixed;
 	top: 100px;
 	left: 50%;
 	display: none;
 	overflow: hidden;
 	border: 1px solid #f82730;
-	background: #e4087561;
+	background: #fff;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
@@ -281,17 +289,18 @@ html, body {
 
 .popup__subtitle {
 	font-size: 25px;
-	color: #d4c3ba;
+	color: #000;
+	text-align: center;
 }
 
 .popup__close {
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 	display: block;
 	text-indent: -9999px;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 15px;
+	right: 20px;
 	background: url('img/close.png') no-repeat;
 }
 
@@ -306,39 +315,28 @@ html, body {
 }
 
 .popup-callback__label {
-	width: 100px;
-	height: 26px;
-	font-size: 16px;
+	width: 100%;
+	font-size: 20px;
 	display: inline-block;
 	vertical-align: top;
-	color: #d4c3ba;
+	color: #000;
+	margin-bottom: 10px;
 }
 
 .popup-callback__input-name, .popup-callback__input-tel {
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	padding: 0 3px;
-	width: 274px;
-	height: 22px;
-	font: bold 16px Roboto, san-serif;
+	width: 100%;
+	height: 30px;
+	font: bold 20px Roboto, san-serif;
 	border: 1px solid #F82730;
 }
 
-.popup-callback__submit {
-	margin: 10px 15px 0 0;
-	padding: 3px 10px;
-	float: right;
-	background: #ff4e2e;
-	color: #fff;
-	font: bold 16px Roboto, san-serif;
-	border: 0;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	font-size: 10px;
-	text-transform: uppercase;
-	position: relative;
+.popup__btn {
+	padding: 20px 72px;
+	display: block;
+	margin: auto;
 	cursor: pointer;
-/*	behavior: url(PIE.htc);*/
 }
 
 .popup-callback__submit:hover {
@@ -349,29 +347,30 @@ html, body {
 }
 /**********overlay styles**********/
 #overlay {
-	width:100%;
-	height:100%;
-	position:fixed;
-	top:0;
-	left:0;
-	display:none;
-	background:#000;
-	opacity:.8;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	background: #000;
+	opacity: .8;
 	z-index: 150;
 }
 
 .notification {
 	width: 250px;
 	height: 20px;
-	background-color: yellow;
-	border: 1px solid red;
-	color: blue;
+	background-color: #fff;
+	border: 1px solid #f82370;
+	color: #000;
 	position: fixed;
 	top: 253px;
 	left: 50%;
 	z-index: 210;
 	text-align: center;
 	margin-left: -140px;
+	padding: 20px 50px;
 }
 
 /*section.name*/
@@ -600,9 +599,19 @@ html, body {
 	box-shadow: -10px 2px 5px 0px #f5f5f5;
 }
 
+.slider__button_prev:focus, .slider__button_prev:active {
+  outline: none;
+	box-shadow: -10px 2px 5px 0px #aaa8aa;
+}
+
 .slider__button_next {
   right: 0;
 	box-shadow: 10px 2px 5px 0px #f5f5f5;
+}
+
+.slider__button_next:focus,.slider__button_next:active {
+  outline: none;
+	box-shadow: 10px 2px 5px 0px #aaa8aa;
 }
 
 .paginator {
@@ -737,6 +746,14 @@ html, body {
 	padding-left: 45px;
 }
 
+.contact:hover {
+	color: #6c6969;
+}
+
+.contact:active {
+	color: #f53f4f;
+}
+
 .contacts__number {
 	background: url('img/phone.png') no-repeat 0 50%;
 	margin: 5px 0 42px;
@@ -769,35 +786,35 @@ html, body {
 }
 
 .social__link_vk {
-	background: url('img/social_sprite.png') no-repeat -19px -20px;	
+	background: url('img/social_sprite.png') no-repeat -80px -10px;	
 }
 
 .social__link_vk:hover {
-	background: url('img/social_sprite.png') no-repeat -19px -74px;	
+	background: url('img/social_sprite.png') no-repeat -115px -10px;	
 }
 
 .social__link_fb {
-	background: url('img/social_sprite.png') no-repeat -65px -20px;	
+	background: url('img/social_sprite.png') no-repeat -8px -10px;	
 }
 
 .social__link_fb:hover {
-	background: url('img/social_sprite.png') no-repeat -65px -74px;	
+	background: url('img/social_sprite.png') no-repeat -43px -10px;	
 }
 
 .social__link_twitter {
-	background: url('img/social_sprite.png') no-repeat -110px -17px;	
+	background: url('img/social_sprite.png') no-repeat -10px -38px;	
 }
 
 .social__link_twitter:hover {
-	background: url('img/social_sprite.png') no-repeat -110px -71px;	
+	background: url('img/social_sprite.png') no-repeat -45px -38px;	
 }
 
 .social__link_instagram {
-	background: url('img/social_sprite.png') no-repeat -152px -18px;	
+	background: url('img/social_sprite.png') no-repeat -82px -37px;	
 }
 
 .social__link_instagram:hover {
-	background: url('img/social_sprite.png') no-repeat -152px -67px;	
+	background: url('img/social_sprite.png') no-repeat -117px -37px;	
 }
 
 .copyright {
@@ -832,7 +849,6 @@ html, body {
 		display: none;
 	}
 }
-
 
 
 
@@ -1191,6 +1207,15 @@ html, body {
 	.price__flying-element.flying-element_braces, .price__flying-element.flying-element_div-big {
 		display: none;
 	}
+	
+	.popup-callback {
+		margin-left: -148px;
+		width: 260px;
+	}
+	
+	.popup-callback__input-name, .popup-callback__input-tel {
+		font-size: 16px;
+	}
 }
 
 
@@ -1326,13 +1351,8 @@ html, body {
 		margin-bottom: 0;
 	}
 	
-	.popup-callback {
-		margin-left: -148px;
-		width: 260px;
-	}
-	
-	.popup-callback__input-name, .popup-callback__input-tel {
-		width: 237px;
+	.popup__btn {
+		padding: 15px auto;
 	}
 	
 	.notification {
