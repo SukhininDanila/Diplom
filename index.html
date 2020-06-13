@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
 	<title>Создание сайтов</title>
-<!--	<link rel="stylesheet" type="text/css" href="styles_min.css">-->
-<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles_min.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Заглавная страница сайта-визитки разработчика Дмитрия Алексеева" />
@@ -12,7 +11,7 @@
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/popup.js"></script>
   <script src="js/form.js"></script>
-  <script src="js/closeHamburger.js"></script>
+  <script src="js/hamburger.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -230,9 +229,13 @@
 						</li>
 					</ul>
 
-					<button class="slider__button slider__button_prev" aria-label="Предыдущий слайд">&lt;</button>
+					<div class="slider__wrapper_prev">
+						<button class="slider__button slider__button_prev" aria-label="Предыдущий слайд">&lt;</button>
+					</div>
 
-					<button class="slider__button slider__button_next" aria-label="Следующий слайд">&gt;</button>
+					<div class="slider__wrapper_next">
+						<button class="slider__button slider__button_next" aria-label="Следующий слайд">&gt;</button>
+					</div>
 
 					<div class="slider__pagination paginator" aria-hidden="true"></div>
 				</div>
